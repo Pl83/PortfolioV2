@@ -1,0 +1,30 @@
+body{
+  main{
+    .me{
+      display: flex;
+      flex-wrap: wrap;
+      .passion{
+        p{
+          margin: 5px;
+        }
+      }
+      .formation{
+        padding-top: 30vh;
+        ul{
+          li{
+            margin: 5px;
+          }
+        }
+      }
+      .contacte{
+        p{
+          margin: 5px;
+          a{
+            color: #FBFEF9;
+            // text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

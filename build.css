@@ -1,0 +1,269 @@
+body {
+  color: #000004;
+  background-color: #FBFEF9;
+}
+body main {
+  background: linear-gradient(180deg, #19647E, #7E1946);
+  color: #FBFEF9;
+}
+body footer {
+  background-color: #7E1946;
+  color: #FBFEF9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+nav .toggle-button {
+  position: absolute;
+  top: 43px;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 31px;
+}
+nav .toggle-button span {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px;
+}
+nav ul li a {
+  color: #000004;
+  padding: 15px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #19647E;
+  border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+  body header nav .toggle-button {
+    display: flex;
+  }
+  body header nav .toggle-button span {
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    color: #000004;
+    background: #000004;
+  }
+  body header nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  body header nav ul li {
+    text-align: center;
+  }
+  body header nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+  body header nav ul.active {
+    display: flex;
+    margin-top: 300px;
+  }
+}
+body footer {
+  height: 90px;
+  width: 100%;
+  padding: 15px;
+}
+body footer p {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+body footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body footer ul li {
+  display: flex;
+  flex-direction: row;
+}
+body footer ul li a {
+  text-decoration: none;
+  padding-top: 0.5vh;
+  padding-left: 1vh;
+  font-size: 20px;
+  color: #FBFEF9;
+}
+
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  z-index: 5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+body header div {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 15px;
+}
+body header div a {
+  padding-left: 10px;
+}
+body header div a img {
+  max-width: 50px;
+  max-height: 50px;
+}
+body header div a img:hover {
+  background-color: #19647E;
+  border-radius: 70px;
+}
+
+@media (max-width: 850px) {
+  body header nav ul li a {
+    font-size: 20px;
+  }
+}
+body main {
+  min-height: 95vh;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+body main h1 {
+  text-align: center;
+}
+
+body main .projet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+body main .projet .ficheprojet {
+  margin: 0;
+  padding: 0;
+  background-color: #FBFEF9;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 10px 5px 5px black;
+  transition: transform 0.2s;
+}
+body main .projet .ficheprojet .imgprojet {
+  background-color: #636363;
+}
+body main .projet .ficheprojet .imgprojet img {
+  object-fit: contain;
+  height: 50%;
+  width: 50%;
+}
+body main .projet .ficheprojet .infoprojet {
+  color: #000004;
+}
+body main .projet .ficheprojet .infoprojet h3 {
+  padding-bottom: 4vh;
+}
+body main .projet .ficheprojet:hover {
+  transition: ease-in-out;
+  transform: scale(120%);
+}
+
+body main .me {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .me .passion p {
+  margin: 5px;
+}
+body main .me .formation {
+  padding-top: 30vh;
+}
+body main .me .formation ul li {
+  margin: 5px;
+}
+body main .me .contacte p {
+  margin: 5px;
+}
+body main .me .contacte p a {
+  color: #FBFEF9;
+}
+
+body main section {
+  padding: 15px;
+}
+body main section .front-skill {
+  display: flex;
+  flex-direction: row;
+}
+body main section .front-skill ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+}
+body main section .front-skill ul li {
+  padding-top: 5vh;
+  padding-left: 4vh;
+}
+body main section .front-skill ul li img {
+  min-height: 80px;
+}
+body main section .back-skill {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 40px;
+}
+body main section .back-skill ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+}
+body main section .back-skill ul li {
+  padding-top: 5vh;
+  padding-right: 5vh;
+}
+body main section .back-skill ul li img {
+  min-height: 80px;
+}
+body main section div ul li img {
+  height: 60px;
+  width: auto;
+}
+body main .skills {
+  height: auto;
+  width: 650px;
+  margin-top: 20px;
+  padding: 10px;
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #FBFEF9;
+  border-inline-start: 8px solid;
+  border-block-end: 8px solid;
+  border-image-source: radial-gradient(circle at bottom left, black, transparent 80%);
+  border-image-slice: 1;
+}
+
+/*# sourceMappingURL=build.css.map */

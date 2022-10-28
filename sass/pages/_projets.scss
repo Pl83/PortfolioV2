@@ -1,0 +1,43 @@
+body{
+  main{
+    .projet{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-top: 50px;
+      .ficheprojet{
+        margin: 0;
+        padding: 0;
+        background-color: #FBFEF9;
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        box-shadow: 10px 5px 5px black;
+        transition: transform .2s;
+        
+        .imgprojet{
+          background-color: #636363;
+          img{
+            object-fit: contain;
+            height: 50%;
+            width: 50%;
+          }
+        }
+        
+        .infoprojet{
+          color: #000004;
+          h3{
+            padding-bottom: 4vh;
+          }
+        }
+      }
+      .ficheprojet:hover{
+        transition: ease-in-out;
+        transform: scale(120%);
+      }
+    }
+  }
+}
