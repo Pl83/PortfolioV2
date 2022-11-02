@@ -1,14 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 body {
-  color: #000004;
+  background: #222;
+  color: #FBFEF9;
+}
+body header {
   background-color: #FBFEF9;
-}
-body main {
-  background: linear-gradient(180deg, #19647E, #7E1946);
-  color: #FBFEF9;
-}
-body footer {
-  background-color: #7E1946;
-  color: #FBFEF9;
 }
 
 * {
@@ -52,7 +48,8 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  background-color: #19647E;
+  background-color: rgba(94, 8, 3, 0.9254901961);
+  color: #FBFEF9;
   border-radius: 5px;
 }
 
@@ -83,6 +80,86 @@ nav ul li a:hover {
     margin-top: 300px;
   }
 }
+.homebody {
+  background-image: url(../image/lab.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.homemain {
+  display: flex;
+  justify-content: left;
+  margin-left: 8%;
+  align-items: center;
+  min-height: 120vh; /*https://www.w3schools.com/cssref/css_units.asp*/ /* permet de centrer*/
+  /* background: #434750; couleur du background du fond */
+  /* on select le dernier enfant/menbre de la liste li */
+}
+.homemain ul {
+  position: relative;
+  transform: skewY(-15deg); /*https://developer.mozilla.org/fr/docs/Web/CSS/transform-function/skew*/
+}
+.homemain ul li {
+  position: relative;
+  list-style: none;
+  width: 180px; /*augmente larguere*/
+  background: #3e3f46;
+  padding: 20px;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+.homemain ul li:hover {
+  background: rgba(94, 8, 3, 0.8549019608); /*change couleur face front*/
+  filter: brightness(1.5);
+  transform: translateX(70px); /*au passage bouge sur la gauche ou la droite */
+}
+.homemain ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: #35383e;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+.homemain ul li:hover::before {
+  background: rgba(94, 8, 3, 0.8549019608);
+  filter: brightness(1.5);
+}
+.homemain ul li::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: #35383e;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+.homemain ul li:hover::after {
+  background: rgba(94, 8, 3, 0.8549019608);
+  filter: brightness(1.5);
+}
+.homemain ul li a {
+  text-decoration: none;
+  color: #999; /*couleur des lettres*/
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.homemain ul li:hover a { /*ce qui se passe aau survole de chaque li*/
+  color: #fff; /*couleur des lettres*/
+}
+.homemain ul li:last-child::after {
+  box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+
 body footer {
   height: 90px;
   width: 100%;
@@ -116,7 +193,7 @@ body header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 120px;
+  height: 90px;
   z-index: 5;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
@@ -134,7 +211,7 @@ body header div a img {
   max-height: 50px;
 }
 body header div a img:hover {
-  background-color: #19647E;
+  background-color: rgba(94, 8, 3, 0.9254901961);
   border-radius: 70px;
 }
 
@@ -214,38 +291,24 @@ body main .me .contacte p a {
 body main section {
   padding: 15px;
 }
-body main section .front-skill {
+body main section .hard-skill {
   display: flex;
-  flex-direction: row;
 }
-body main section .front-skill ul {
+body main section ul {
   display: flex;
   flex-direction: row;
   gap: 3vh;
 }
-body main section .front-skill ul li {
+body main section ul li {
   padding-top: 5vh;
   padding-left: 4vh;
 }
-body main section .front-skill ul li img {
+body main section ul li img {
   min-height: 80px;
 }
-body main section .back-skill {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-top: 40px;
-}
-body main section .back-skill ul {
+body main section .soft-skill {
   display: flex;
   flex-direction: row;
-  gap: 3vh;
-}
-body main section .back-skill ul li {
-  padding-top: 5vh;
-  padding-right: 5vh;
-}
-body main section .back-skill ul li img {
-  min-height: 80px;
 }
 body main section div ul li img {
   height: 60px;
@@ -259,11 +322,102 @@ body main .skills {
   padding-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
-  color: #FBFEF9;
   border-inline-start: 8px solid;
   border-block-end: 8px solid;
-  border-image-source: radial-gradient(circle at bottom left, black, transparent 80%);
+  border-image-source: radial-gradient(circle at bottom left, #ff9100, transparent 80%);
   border-image-slice: 1;
+}
+body main img {
+  height: auto;
+  width: 30vh;
+}
+
+.mainprojet {
+  color: #555;
+  background: #222;
+  text-align: center;
+  font-family: "Roboto Mono";
+  padding: 1em;
+}
+
+.h1projet {
+  font-size: 2em;
+  color: #FBFEF9;
+  padding-top: 10vh;
+}
+
+.projecto {
+  padding-top: 10vh;
+}
+
+.flip {
+  position: relative;
+}
+.flip > .front,
+.flip > .back {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+.flip > .front {
+  transform: rotateY(0deg);
+}
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+.flip:hover > .front {
+  transform: rotateY(180deg);
+}
+.flip:hover > .back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+  transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+  transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+  transform: rotateX(0deg);
+}
+
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 1em;
+  width: 400px;
+}
+.flip > .front,
+.flip > .back {
+  display: block;
+  color: white;
+  width: inherit;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 220px;
+  padding: 1em 2em;
+  background: #313131;
+  border-radius: 10px;
+}
+.flip > .front .pprojet,
+.flip > .back .pprojet {
+  font-size: 0.9125rem;
+  line-height: 160%;
+  color: #999;
+  font-size: 20px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
 /*# sourceMappingURL=build.css.map */
