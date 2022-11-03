@@ -161,16 +161,17 @@ nav ul li a:hover {
 }
 
 body footer {
-  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  padding: 15px;
-}
-body footer p {
-  font-size: 20px;
-  padding-top: 5px;
   padding-bottom: 10px;
 }
 body footer ul {
+  gap: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -228,6 +229,24 @@ body main {
 }
 body main h1 {
   text-align: center;
+}
+
+.homehtml {
+  overflow-y: hidden;
+}
+
+body .homemain .picture {
+  position: absolute;
+  left: 42%;
+  bottom: 45%;
+}
+body .homemain .description {
+  position: absolute;
+  bottom: 22%;
+  right: 5%;
+  max-width: 20%;
+  box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.25);
+  transform: skewY(15deg);
 }
 
 body main .projet {
