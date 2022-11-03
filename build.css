@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@600&family=Playfair+Display:wght@500&family=Poppins:wght@500;600;700&family=Questrial&family=Roboto&family=Tangerine:wght@400;700&family=Volkhov:wght@700&display=swap%27");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 body {
   background: #222;
@@ -12,8 +13,14 @@ body header {
   padding: 0;
   box-sizing: border-box;
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: "Questrial", sans-serif;
   list-style: none;
+}
+
+h1 {
+  font-size: 2em;
+  color: #FBFEF9;
+  padding-top: 10vh;
 }
 
 nav {
@@ -240,6 +247,10 @@ body .homemain .picture {
   left: 42%;
   bottom: 45%;
 }
+body .homemain .picture img {
+  height: auto;
+  width: 30vh;
+}
 body .homemain .description {
   position: absolute;
   bottom: 22%;
@@ -307,48 +318,45 @@ body main .me .contacte p a {
   color: #FBFEF9;
 }
 
-body main section {
-  padding: 15px;
-}
-body main section .hard-skill {
-  display: flex;
-}
-body main section ul {
+body main .hard-skill {
   display: flex;
   flex-direction: row;
-  gap: 3vh;
+  justify-content: center;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
 }
-body main section ul li {
-  padding-top: 5vh;
-  padding-left: 4vh;
-}
-body main section ul li img {
-  min-height: 80px;
-}
-body main section .soft-skill {
-  display: flex;
-  flex-direction: row;
-}
-body main section div ul li img {
-  height: 60px;
-  width: auto;
-}
-body main .skills {
-  height: auto;
-  width: 650px;
-  margin-top: 20px;
-  padding: 10px;
-  padding-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+body main .hard-skill .skills {
+  max-width: 900px;
+  padding: 1.5%;
   border-inline-start: 8px solid;
   border-block-end: 8px solid;
-  border-image-source: radial-gradient(circle at bottom left, #ff9100, transparent 80%);
+  border-image-source: radial-gradient(circle at bottom left, rgba(201, 17, 8, 0.8549019608), transparent 80%);
   border-image-slice: 1;
 }
+body main .soft-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+}
+body main .soft-skills .skills {
+  max-width: 900px;
+  padding: 1.5%;
+  border-inline-start: 8px solid;
+  border-block-end: 8px solid;
+  border-image-source: radial-gradient(circle at bottom left, rgba(201, 17, 8, 0.8549019608), transparent 80%);
+  border-image-slice: 1;
+}
+body main .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5%;
+}
 body main img {
-  height: auto;
-  width: 30vh;
+  width: auto;
+  height: 80px;
 }
 
 .mainprojet {
@@ -357,12 +365,6 @@ body main img {
   text-align: center;
   font-family: "Roboto Mono";
   padding: 1em;
-}
-
-.h1projet {
-  font-size: 2em;
-  color: #FBFEF9;
-  padding-top: 10vh;
 }
 
 .projecto {
