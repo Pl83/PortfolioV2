@@ -1,55 +1,5 @@
 body{
   main{
-    // section{ 
-    //   padding: 15px;
-    //   .hard-skill{
-    //     display: flex;
-    //     // flex-direction: row;
-    //   }
-    //   ul{
-    //     display: flex;
-    //     flex-direction: row;
-    //     gap: 3vh;
-    //     li{
-    //       padding-top: 5vh;
-    //       padding-left: 4vh;
-    //       img{
-    //         min-height: 80px;
-    //       }
-    //     }
-    //   }
-    //   .soft-skill{
-    //     display: flex;
-    //     flex-direction: row;
-    //   }
-    //   div{
-    //     ul{
-    //       li{
-    //         img{
-    //           height: 60px;
-    //           width: auto;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-    // .skills{
-    //     height: auto;
-    //     width: 650px;
-    //     margin-top: 20px;
-    //     padding: 10px;
-    //     padding-top: 30px;
-    //     margin-left:20px ;
-    //     margin-right:20px ;
-    //     border-inline-start: 8px solid;
-    //     border-block-end: 8px solid;
-    //     border-image-source: 
-    //       radial-gradient(
-    //         circle at bottom left,
-    //         #ff9100,
-    //         transparent 80%);
-    //     border-image-slice: 1;
-    // }
     .hard-skill{
       display: flex;
       flex-direction: row;
@@ -93,7 +43,7 @@ body{
 
     .logo{
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
       padding-top: 5%;
     }
