@@ -105,27 +105,25 @@ nav ul li a:hover {
   justify-content: left;
   margin-left: 8%;
   align-items: center;
-  min-height: 120vh; /*https://www.w3schools.com/cssref/css_units.asp*/ /* permet de centrer*/
-  /* background: #434750; couleur du background du fond */
-  /* on select le dernier enfant/menbre de la liste li */
+  min-height: 120vh;
 }
 .homemain ul {
   position: relative;
-  transform: skewY(-15deg); /*https://developer.mozilla.org/fr/docs/Web/CSS/transform-function/skew*/
+  transform: skewY(-15deg);
 }
 .homemain ul li {
   position: relative;
   list-style: none;
-  width: 180px; /*augmente larguere*/
+  width: 180px;
   background: #3e3f46;
   padding: 20px;
   z-index: var(--i);
   transition: 0.5s;
 }
 .homemain ul li:hover {
-  background: rgba(94, 8, 3, 0.8549019608); /*change couleur face front*/
+  background: rgba(94, 8, 3, 0.8549019608);
   filter: brightness(1.5);
-  transform: translateX(70px); /*au passage bouge sur la gauche ou la droite */
+  transform: translateX(70px);
 }
 .homemain ul li::before {
   content: "";
@@ -161,14 +159,14 @@ nav ul li a:hover {
 }
 .homemain ul li a {
   text-decoration: none;
-  color: #999; /*couleur des lettres*/
+  color: #999;
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: 0.5s;
 }
-.homemain ul li:hover a { /*ce qui se passe aau survole de chaque li*/
-  color: #fff; /*couleur des lettres*/
+.homemain ul li:hover a {
+  color: #fff;
 }
 .homemain ul li:last-child::after {
   box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
@@ -261,6 +259,11 @@ body .homemain .description {
   max-width: 20%;
   box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.25);
   transform: skewY(15deg);
+}
+
+.h1deref {
+  display: none;
+  color: rgba(250, 235, 215, 0);
 }
 
 body main .me {
