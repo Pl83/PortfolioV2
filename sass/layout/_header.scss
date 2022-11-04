@@ -43,3 +43,19 @@ body{
     }
   }
 }
+
+@media (max-width: 350px) {
+  body{
+    header{
+      .lien-contact{
+        a{
+          img{
+            max-width: 35px;
+            max-height: 35px;
+          }
+        }
+      }
+    }
+  }
+
+}

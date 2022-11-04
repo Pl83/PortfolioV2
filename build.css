@@ -50,7 +50,7 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  background-color: rgba(94, 8, 3, 0.9254901961);
+  background-color: rgba(94, 8, 3, 0.8549019608);
   color: #FBFEF9;
   border-radius: 5px;
 }
@@ -94,12 +94,6 @@ nav ul li a:hover {
     padding-left: -100%;
   }
 }
-.homebody {
-  background-image: url(../image/lab.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
 .homemain {
   display: flex;
   justify-content: left;
@@ -172,12 +166,24 @@ nav ul li a:hover {
   box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
 }
 
+img {
+  width: 100%;
+}
+
+body .wnh {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  opacity: 30%;
+  z-index: -1;
+  filter: contrast(3);
+}
+
 body footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
@@ -233,6 +239,12 @@ body header div a img:hover {
     font-size: 20px;
   }
 }
+@media (max-width: 350px) {
+  body header .lien-contact a img {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
 body main {
   min-height: 95vh;
   padding-top: 30px;
@@ -243,20 +255,23 @@ body main h1 {
   text-align: center;
 }
 
+body .homemain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 body .homemain .picture {
-  position: absolute;
-  left: 42%;
-  bottom: 45%;
+  grid-column: 2/3;
+  padding-left: 12%;
+  padding-bottom: 70%;
+  z-index: -1;
 }
 body .homemain .picture img {
   height: auto;
   width: 30vh;
 }
 body .homemain .description {
-  position: absolute;
-  bottom: 22%;
-  right: 5%;
-  max-width: 20%;
+  grid-column: 3/4;
+  min-width: 20%;
   box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.25);
   transform: skewY(15deg);
 }
@@ -329,7 +344,6 @@ body main img {
 
 .mainprojet {
   color: #555;
-  background: #222;
   text-align: center;
   font-family: "Roboto Mono";
   padding: 1em;
@@ -396,17 +410,34 @@ body main img {
   padding: 1em 2em;
   background: #313131;
   border-radius: 10px;
+  border: 3px solid black;
 }
 .flip > .front .pprojet,
 .flip > .back .pprojet {
   font-size: 0.9125rem;
-  line-height: 160%;
+  line-height: 110%;
   color: #999;
   font-size: 20px;
 }
 
-.text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+.projetlien {
+  text-decoration: underline;
+  font-size: smaller;
+  color: #FBFEF9;
+}
+
+.projh2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  .flip {
+    width: 300px;
+  }
+  .flip > .front .pprojet,
+.flip > .back .pprojet {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=build.css.map */
