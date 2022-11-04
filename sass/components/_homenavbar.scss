@@ -81,7 +81,11 @@ ul li:last-child::after{
 }
 }
 
-
-img{
-  width: 100%;
+@media (max-width:830px){
+  .homemain{
+    .menu{
+      padding-top: 20%;
+    }
 }
+}
+

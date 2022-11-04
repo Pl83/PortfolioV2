@@ -32,3 +32,15 @@ body{
   color: rgba(250, 235, 215, 0);
 }
 
+@media (max-width:830px) {
+  body{
+    .homemain{
+      display: flex;
+      flex-direction: column;
+      .description{
+        padding-top: 25%;
+        transform: skewY(10deg);
+      }
+    }
+  }
+}

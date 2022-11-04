@@ -166,13 +166,14 @@ nav ul li a:hover {
   box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
 }
 
-img {
-  width: 100%;
+@media (max-width: 830px) {
+  .homemain .menu {
+    padding-top: 20%;
+  }
 }
-
 body .wnh {
   position: fixed;
-  height: auto;
+  height: 1222.94px;
   width: 100%;
   opacity: 30%;
   z-index: -1;
@@ -281,6 +282,16 @@ body .homemain .description {
   color: rgba(250, 235, 215, 0);
 }
 
+@media (max-width: 830px) {
+  body .homemain {
+    display: flex;
+    flex-direction: column;
+  }
+  body .homemain .description {
+    padding-top: 25%;
+    transform: skewY(10deg);
+  }
+}
 body main .me {
   display: flex;
   flex-wrap: wrap;
