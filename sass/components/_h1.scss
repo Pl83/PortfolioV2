@@ -3,3 +3,9 @@ h1{
   color: #FBFEF9;
   padding-top: 10vh;
   }
+
+@media (max-width: 450px) {
+  h1{
+    font-size: 1em;
+  }
+}

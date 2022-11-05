@@ -23,75 +23,9 @@ h1 {
   padding-top: 10vh;
 }
 
-nav {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-}
-nav .toggle-button {
-  position: absolute;
-  top: 43px;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 40px;
-  height: 31px;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 30px;
-}
-nav ul li a {
-  color: #000004;
-  padding: 15px;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  background-color: rgba(94, 8, 3, 0.8549019608);
-  color: #FBFEF9;
-  border-radius: 5px;
-}
-
-@media (max-width: 750px) {
-  body header nav {
-    height: 1vh;
-  }
-  body header nav .toggle-button {
-    display: flex;
-  }
-  body header nav .toggle-button span {
-    height: 3px;
-    width: 100%;
-    border-radius: 10px;
-    color: #000004;
-    background: #000004;
-  }
-  body header nav ul {
-    display: none;
-    width: 100vh;
-    flex-direction: row;
-  }
-  body header nav ul li {
-    display: flex;
-    justify-content: space-around;
-  }
-  body header nav ul.active {
-    display: flex;
-    margin-top: 300px;
-  }
-  body header nav ul.active li a {
-    color: #FBFEF9;
-    border: solid 2px rgba(94, 8, 3, 0.8549019608);
-    border-radius: 30%;
-  }
-}
-@media (max-width: 430px) {
-  body header nav ul {
-    padding-bottom: 35%;
-    padding-left: -100%;
+@media (max-width: 450px) {
+  h1 {
+    font-size: 1em;
   }
 }
 .homemain {
@@ -221,6 +155,7 @@ body header div {
   display: flex;
   flex-direction: row;
   padding: 10px;
+  padding-top: 2.5%;
   gap: 15px;
 }
 body header div a {
@@ -449,6 +384,124 @@ body main img {
 .flip > .back .pprojet {
     font-size: 15px;
   }
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 18vh; /* change to 8vh */
+  background-color: #FBFEF9;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.navbar .logo {
+  color: #222;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+
+.navbar ul.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  list-style-type: none;
+  padding-top: 2%;
+}
+
+.navbar ul.nav-links li a:hover {
+  background-color: rgba(94, 8, 3, 0.8549019608);
+  color: #FBFEF9;
+  border-radius: 5px;
+}
+
+.navbar ul.nav-links li a {
+  font-size: 20px;
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.navbar .menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-grow: 1;
+  margin-left: 25px;
+}
+
+.navbar .menu-icon span {
+  display: block;
+  border-radius: 15px;
+  width: 25px;
+  height: 5px;
+  background-color: #222;
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    overflow: hidden;
+  }
+  .navbar .menu-icon {
+    display: block;
+    z-index: 10;
+  }
+  .navbar .logo {
+    flex-grow: 1;
+  }
+  .navbar ul.nav-links {
+    position: absolute;
+    top: 18vh; /* change to 8vh */
+    height: 82vh; /* change to 92vh */
+    left: 0px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFEF9;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    width: 50%;
+  }
+  .navbar ul.nav-links li {
+    opacity: 0;
+  }
+}
+.navbar ul.nav-links.menu-active {
+  transform: translateX(0%);
+  opacity: 1;
+  z-index: 10;
+  border-radius: 0 10px 10px 0;
+}
+
+@keyframes navLinkAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.navbar .menu-icon.span-anime span:first-child {
+  transform: rotate(-135deg) translate(-20px, 6px);
+  margin-left: -18px;
+}
+
+.navbar .menu-icon.span-anime span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar .menu-icon.span-anime span:last-child {
+  transform: rotate(135deg) translate(-19px, -5px);
+  margin-left: -17px;
 }
 
 /*# sourceMappingURL=build.css.map */
