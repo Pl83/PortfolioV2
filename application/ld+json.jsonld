@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Quelles sont les réalisations ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Vous pourez retrouvers tous mes réalisation sur ma page projets et ou mon github."
+    }
+  },{
+    "@type": "Question",
+    "name": "Comment me contacter ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Vous pouvez me contacter par E-mail ou par linkdin."
+    }
+  },{
+    "@type": "Question",
+    "name": "Qui je suis ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Je suis un étudiant de 2éme année a l'IIM plutot horienter fullstack"
+    }
+  }]
+}
