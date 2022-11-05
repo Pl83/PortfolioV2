@@ -1,26 +1,98 @@
 body{
   main{
+    h1{
+      padding-bottom: 6%;
+    }
     .me{
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 40px;
+      
       .passion{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        border-inline-start: 8px solid;
+        border-block-start: 8px solid;
+        border-image-source: 
+          radial-gradient(
+            circle at top left,
+            #c91108da,
+            transparent 80%);
+        border-image-slice: 1;
         p{
-          margin: 5px;
+          margin: 10px;
+          line-height: 110%;
         }
       }
-      .formation{
-        padding-top: 30vh;
-        ul{
-          li{
-            margin: 5px;
+      .formationup{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25%;
+        padding: 3%;
+        .formation{
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          border-inline-end: 8px solid #c91108da;
+          ul{
+            li{
+              margin: 10px;
+              line-height: 110%;
+            }
           }
+        }
+        img{
+          min-width: 40px;
+          height: auto;
         }
       }
       .contacte{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        border-inline-start: 8px solid;
+        border-block-end: 8px solid;
+        border-image-source: 
+          radial-gradient(
+            circle at bottom left,
+            #c91108da,
+            transparent 80%);
+        border-image-slice: 1;
         p{
-          margin: 5px; 
+          margin: 10px;
+          line-height: 110%;
           a{
             color: #FBFEF9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  body{
+    main{
+      .me{
+        .formationup{
+          gap: 2%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  body{
+    main{
+      .me{
+        .formationup{
+          gap: 0;
+          img{
+            display: none
           }
         }
       }
