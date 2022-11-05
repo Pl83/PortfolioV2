@@ -15,7 +15,8 @@
   <title>PortFolioDePL</title>
 </head>
 <body>
-  <img class="wnh" src="img/wn4.png" alt="wallpaper nebuleuse">
+  <img class="wnh" src="img/wn4.png" alt="wallpaper nebuleuse" aria-describedby="image-fond">
+  <p id="image-fond">Sur cette page comme toute les autre on retrouve en fond une image d'une nébuleuse.</p>
   <header>
     <nav class="navbar">
       <div class="menu-icon">
@@ -25,16 +26,16 @@
       </div>
   
       <div class="logo">
-        <a target="_blank" href="https://github.com/Pl83"><img src="img/L.Github.png" alt="logo/lien vers mon Github"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/pierre-louis-sans-7756b0223/"><img src="img/L.linkdin.png" alt="logo/lien vers mon Linkdin"></a>
-        <a target="_blank" href="mailto:pierre-louis.sans@edu.devinci.fr"><img src="img/L.Mail.png" alt="logo/lien vers mon E-Mail"></a>
+        <a target="_blank" href="https://github.com/Pl83"><img src="img/L.Github.png" alt="logo/lien vers mon Github" aria-label="ouvrir dans une nouvelle fenétre ma page github"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/pierre-louis-sans-7756b0223/"><img src="img/L.linkdin.png" alt="logo/lien vers mon Linkdin" aria-label="ouvrir dans une nouvelle fenétre ma page linkdin"></a>
+        <a target="_blank" href="mailto:pierre-louis.sans@edu.devinci.fr"><img src="img/L.Mail.png" alt="logo/lien vers mon E-Mail" aria-label="ouvrir dans une nouvelle fenétre une zone d'envoie d'E-mail"></a>
       </div>
   
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutme.html">Moi</a></li>
         <li><a href="skill.html">Skills</a></li>
-        <li><a href="project.html">Projets</a></li>
+        <li><a href="project.html" aria-current="page">Projets</a></li>
       </ul>
     </nav>
   </header>
@@ -42,43 +43,48 @@
     <h1 class="h1projet">Mes projets :</h1>
     <section class="projecto">
       <div class="flip">
-          <div class="front" style="background-image: url(img/projetgaya.png)">
+          <div class="front" style="background-image: url(img/projetgaya.png)" aria-labelledby="projet-gaya">
+            <p id="projet-gaya">Une capture d'écran du projet gaya avec un aspect technique plus en avant que l'aspect visuel.</p>
           </div>
-          <div class="back">
+          <div class="back" tabindex="0">
             <h2 class="projh2">GAÿA</h2>
             <p class="pprojet">Il s'agit d'un projet réaliser dans le cadre de ma premiére année a l'IIM pour validée les diverse compétence accise au cours de l'année. (contient html, css, js, php, mysql)</p>
           </div>
       </div>
-      <div class="flip">
-          <div class="front" style="background-image: url(img/projetnddp.png)">
+      <div class="flip" tabindex="1">
+          <div class="front" style="background-image: url(img/projetnddp.png)" aria-labelledby="projet-Notre_dame_de_paris">
+            <p id="projet-Notre_dame_de_paris">Une capture d'écran du projet sur notre dame de paris, avec une immage du monument dessus.</p>
           </div>
           <div class="back">
             <h2 class="projh2">Notre Dame de Paris</h2>
             <p class="pprojet">Ce site a été réaliser dans le cadre de l'apprentisage du SCSS et des grids, avec pour sujet Notre dame de paris. <a class="projetlien" target="_blank" href="https://pl83.github.io/Notre-dame-de-paris/" alt="Lien vers le site sur notre dame de paris que j'ai réaliser">Voir</a></p>
           </div>
       </div>
-      <div class="flip">
-          <div class="front" style="background-image: url(img/projetpres.png)">
+      <div class="flip" tabindex="2">
+          <div class="front" style="background-image: url(img/projetpres.png)" aria-labelledby="projet-présentation">
+            <p id="projet-présentation">Une capture d'écran du site réaliser pour présenter une personnes, c'est passions et compétence, acces sur l'aspect visuel.</p>
           </div>
           <div class="back">
             <h2 class="projh2">Présentation</h2>
             <p class="pprojet">Onepage réaliser pour m'entrainer au css (avec maquette).</p>
           </div>
       </div> 
-      <div class="flip">
-        <div class="front" style="background-image: url(img/projetport.png)">
+      <div class="flip" tabindex="3">
+        <div class="front" style="background-image: url(img/projetport.png)" aria-labelledby="projet-portfolio">
+          <p id="projet-portfolio">Une capture d'écran de la home page de ce site internet car ce portfolio fait partie de mes réalisations.</p>
         </div>
         <div class="back">
           <h2 class="projh2">Portfolio</h2>
           <p class="pprojet">Il s'agit du Portfolio que vous visitez actuellement. <a class="projetlien" href="https://portfolio-seven-rho-60.vercel.app/index.html" alt="lien pour retourner sur la home page de mon portfolio et le revisiter" >Revoir</a></p>
         </div>
     </div>
-    <div class="flip">
-      <div class="front" style="background-image: url(img/projetneuro.png)">
+    <div class="flip" tabindex="4">
+      <div class="front" style="background-image: url(img/projetneuro.png)" aria-labelledby="projet-neurotech">
+        <p id="projet-neurotech">Un photo sur laquel on voit moi et mon ami entrait de présenter notre projet lors du Hackton.</p>
       </div>
       <div class="back">
         <h2 class="projh2">Hackton Neurotech</h2>
-        <p class="pprojet">Hackton réaliser avec des amis pour découvrir de nouvelle technologie. Notre objectif était de capter les ondes neuronales pour en faire de la musique.</p>
+        <p class="pprojet">Hackton réaliser pour découvrir de nouvelle technologie. Notre objectif était de capter les ondes neuronales pour en faire de la musique.</p>
       </div>
   </div>
     </section> 
