@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: rgb(206, 42, 184);
+      height: 200vh;
+      width: 100vw;
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+    }
+    .q{
+      display: flex;
+      flex-direction: row;
+      background-color: aqua;
+    }
+    .s{
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: aquamarine;
+    }
+    .d{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: rgb(81, 255, 0);
+
+    }
+    aside{
+      z-index: 10;
+      position: sticky;
+      top: 40%;
+      left: 0;
+      transform: translateY(-50%);
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    aside:hover img{
+      width: 80px;
+    }
+    aside img{
+      width: 20px;
+      height: auto;
+    }
+    /* aside nav{
+      display: none;
+    } */
+    aside nav ul{
+      background-color: aliceblue;
+      padding: 10px;
+      list-style: none;
+    }
+    /* .tirre{
+      background-color: aliceblue;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 40px;
+    } */
+  </style>
+  
+  <title>Document</title>
+</head>
+<body>
+  <aside class="aside">
+    <!-- <div class="tirre">>></div> -->
+    <nav>
+      <ul>
+        <li><a target="_blank" href="https://www.linkedin.com/in/pierre-louis-sans-7756b0223/" aria-label="ouvrir dans une nouvelle fenétre ma page github">
+          <img src="img/L.linkdin.png" alt="linkedIn"></a></li>
+        <li><a target="_blank" href="https://github.com/Pl83" aria-label="ouvrir dans une nouvelle fenétre ma page linkdin">
+          <img src="img/L.Github.png" alt="github"></a></li>
+        <li><a target="_blank" href="mailto:pierre-louis.sans@edu.devinci.fr" aria-label="ouvrir dans une nouvelle fenétre une zone d'envoie d'E-mail">
+          <img src="img/L.Mail.png" alt="email"></a></li>
+        <li><a target="_blank" href="cv/cv.pdf" download><img src="img/L_cv.png" alt="cv"></a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+    <section class="q">
+      <div class="un">1a</div>
+      <div class="deux">1b</div>
+    </section>
+    <section class="s">
+      <div class="troi">2a</div>
+      <div class="quatre">2b</div>
+    </section>
+    <section class="d">
+      <div class="cinq">3a</div>
+      <div class="six">3b</div>
+    </section>
+  </main>
+  <script>
+    // const aside = document.querySelector('.aside');
+    // console.log(aside);
+    // const tirre = document.querySelector('.tirre');
+    // const nav = document.querySelector('aside>nav');
+    // console.log(nav);
+    // aside.addEventListener('mouseover', () => {
+    //   console.log('ok');
+    //   nav.style.display = 'block';
+    // });
+    // aside.addEventListener('mouseout', () => {
+    //   console.log('ok');
+    //   nav.style.display = 'none';
+    // });
+  </script>
+</body>
+</html>

@@ -37,3 +37,67 @@ body{
     }
   }
 }
+
+body{
+  overflow-x: hidden;
+}
+main{
+  .backbar{
+    z-index: 7;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150vw;
+    height: 20vh;
+    background: rgba(236, 236, 236, 0.5);
+    rotate: -4deg;
+  }
+  .midpp{
+    z-index: 8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20vw;
+    width: auto;
+
+  }
+  .frontbar{
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(216, 216, 216, 0.5);
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    h2{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .lowpart{
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 25%;
+    .parttwo{
+      background-color:darkgreen;
+      width: 40%;
+      padding: 10px;
+      background: rgba(216, 216, 216, 0.5);
+      color: black;
+    }
+    .parttree{
+      background-color:darkblue;
+      width: 40%;
+      padding: 10px;
+      background: rgba(216, 216, 216, 0.5);
+      color: black;
+    }
+  }
+}

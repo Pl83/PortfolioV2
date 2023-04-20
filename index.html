@@ -19,27 +19,92 @@
   <meta property="og:type" content="index">
   <meta property="og:url" content="https://portfolio-seven-rho-60.vercel.app/">
   <meta property="og:description" content="Cette page sert de menu au portfolio">
-  <script type="application/ld+json" src="application/ld+json.jsonld" ></script>
+  <script async type="application/ld+json" src="application/ld+json.jsonld" ></script>
   <link rel="canonical" href="https://portfolio-seven-rho-60.vercel.app/">
   <link rel="icon" type="image/x-icon" href="img/logoperso.png">
-  <link rel="stylesheet" href="build.css">
+  <link rel="stylesheet" href="sass/build.css">
   <title>PortFolioDePL</title>
 </head>
-<body class="homebody">
+<body>
   <img class="wnh" src="img/wn4.png" alt="wallpaper nebuleuse" aria-describedby="image-fond">
-  <p id="image-fond">Sur cette page comme toutes les autres on retrouve en fond une image d'une nébuleuse.</p>
-  <main class="homemain">
-    <h1 class="h1deref">étudiant coding&digital innovation portfolio</h1>
-    <ul class="menu">
-      <li style="--i:5;"><a href="index.html" aria-current="page">Accueil</a></li>    
-      <li style="--i:4;"><a href="aboutme.html">Moi</a></li>
-      <li style="--i:3;"><a href="skill.html">Skills</a></li>
-      <li style="--i:2;"><a href="project.html">Projets</a></li>
-    </ul>
-    <div class="description">
-      <h2>Je suis un étudiant français en développement WEB.</h2>
-      <p>Bonne visite sur mon portfolio fait maison et si vous avez la moindre question n'hésitez pas à me contacter.</p>
-    </div>
+  <p id="image-fond">Sur cette page comme toutes les autres on retrouve en fond une image d'une nébuleuse.</p>  
+  <header>
+    <nav class="navbar">
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="project.html">Projets</a></li>
+        <li><a href="contacte.html">contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- <h1>Pierre-Louis Sans :</h1> -->
+    <!-- <br>
+    <section class="me">
+      <div class="description">
+        <h2>Je suis un étudiant français en Coding & Digital Inovation a l'IIM.</h2>
+        <p>Si vous avez la moindre question n'hésitez pas à me contacter, bonne visite.</p>
+      </div>
+      <div class="passion">
+        <h2>Moi :</h2>
+        <p>Mes amis me définiraient comme quelqu'un d'optimiste, franc et joyeux.</p>
+        <p>J'aime la nature, le code, la lecture et les jeux vidéo.</p>
+      </div>
+      <div class="formationup">
+        <div class="formation">
+          <h2>Mes formations : </h2>
+          <ul>
+            <li>BAC orienté Science</li>
+            <li>En 2éme année de l'axe Coding&digitale innovation a l'IIM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contacte">
+        <h2>Me contacter :</h2>
+        <p>Pour tous renseignements ou autres n'hésitez pas à me contacter sur <a href="https://www.linkedin.com/in/pierre-louis-sans-7756b0223/" target="_blank">linkedIn</a>, <a href="https://github.com/Pl83" target="_blank">Github</a>, ou par <a href="mailto:pierre-louis.sans@edu.devinci.fr" target="_blank">E-Mail</a>.</p>
+      </div>
+    </section>   -->
+    <section>
+      <div class="backbar"></div>
+      <img class="midpp" src="img/logoperso.png" alt="">
+      <div class="frontbar">
+        <h2>Présentation</h2>
+        <p>Je me présente Pierre-louis Sans, 20 ans, developer web fullstack avec une préférence pour le JavaScript. Je suis quelqu'un de positif et joyeux, qui s'adapte vite. Je vous souhaite une bonne visite sur mon portfolio.</p>
+      </div>
+    </section>
+    <section class="lowpart">
+      <!-- <div >
+        <h2>A propos</h2>
+      </div> -->
+      <!-- <div class="partone">
+        <h3>Expérience</h3>
+        <p></p>
+      </div> -->
+      <div class="parttwo">
+        <h3>Formation : </h3>
+        <br>
+        <ul>
+          <li> - Bac scientifique</li>
+          <p>J'ai passé mon bac avec les spécialités SVT, Physique-chimie et math complémentaires.</p>
+          <br>
+          <li> - En 2éme année de l'axe Coding&digitale innovation a l'IIM</li>
+          <p>Je suis actuellement en 2éme année de Bachelier à l'IIM. J'ai pour objectif le Mastère.</p>
+          <br>
+        </ul>
+      </div>
+      <div class="parttree">
+        <h3>Projet Favorie : </h3>
+        <br>
+        <p>Que ce soit dans le cadre scolaire où personnel, j'ai pu réaliser de nombreux projets simultanément, amusants et instructifs. Parmi eux, un projet a notamment touché mon cœur : Le pokedex. C'est un projet de groupe qui m'a replongé en enfance. J'ai travaillé à la réalisation d'un pokedex via la PokeApi. Ce projet m'a permis de progresser à la fois dans ma gestion des Api, mais aussi dans la maîtrise du JavaScript.</p>
+      </div>
+    </section>
+
   </main>
   <footer>
     <ul>
@@ -48,5 +113,6 @@
       <li><a target="_blank" href="mailto:pierre-louis.sans@edu.devinci.fr" aria-label="ouvrir dans une nouvelle fenétre une zone d'envoie d'E-mail">E-Mail</a></li>
     </ul>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
