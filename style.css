@@ -1,0 +1,62 @@
+:root {
+  --Sbgcolor : #060404;
+  --Stextcolor : #f3ecec;
+  --Lbgcolor : #fcf3f7;
+  --Ltextcolor : #000000;
+  --titlecolor : #333;
+  --hovercolor : #333;
+  --btnprimary : #1770b0;
+  --btnsecond : #d3ccff;
+  --accentcolor : #2001e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: calc(100vw - 110px);
+}
+
+aside {
+  position: sticky;
+  top: 0;
+  background-color: var(--Sbgcolor);
+  color: var(--Stextcolor);
+  width: 110px;
+  height: 100vh;
+}
+
+#accueil {
+background-color: var(--Lbgcolor);
+color: var(--textcolor);
+}
+
+#profile {
+background-color: var(--Lbgcolor);
+color: var(--Ltextcolor);
+}
+
+#projet {
+background-color: var(--Lbgcolor);
+color: var(--Ltextcolor);
+}
+
+#contacte {
+background-color: var(--Lbgcolor);
+color: var(--Ltextcolor);
+}
