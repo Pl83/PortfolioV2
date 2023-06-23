@@ -2,42 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/logoperso.png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
   <script src="script.js" defer></script>
-  <title>Pierre-louis_Sans</title>
+  <title>pierre-louis sans</title>
 </head>
 <body>
-  <aside>
+
+  <header>
+
     <nav>
+
+      <div>
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+        width="80px" height="80px" viewBox="0 0 100.000000 100.000000"
+        preserveAspectRatio="xMidYMid meet">
+        <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+        fill="#212227" stroke="none">
+        <path d="M348 960 c-149 -31 -238 -92 -292 -198 -23 -46 -52 -159 -43 -168 3
+        -3 34 10 71 28 63 31 66 34 66 68 1 109 109 211 239 227 l49 6 -64 -317 c-35
+        -173 -73 -340 -85 -370 -27 -74 -66 -106 -128 -106 -43 0 -51 -4 -100 -54
+        l-53 -54 248 -8 c408 -13 474 -12 514 10 67 36 138 100 142 128 5 33 -1 34
+        -53 7 -88 -45 -230 -58 -461 -42 l-97 6 38 27 c55 40 98 97 122 160 12 30 41
+        152 65 270 47 224 76 308 120 336 21 14 28 14 72 0 106 -35 143 -121 107 -242
+        -29 -97 -131 -179 -237 -191 -48 -5 -78 -22 -78 -45 0 -13 90 -9 159 7 184 44
+        321 189 321 341 0 99 -49 152 -169 180 -86 21 -365 17 -473 -6z"/>
+        </g>
+        </svg>
+      </div>
+
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#projet">Projet</a></li>
-        <li><a href="#contacte">Contacte</a></li>
+        <li><a class="A" href="index.html">Accueil</a></li>
+        <li><a class="B" href="projet.html">Projets</a></li>
+        <li><a class="C" href="contacte.html">Contactes & Liens</a></li>
       </ul>
+      <div id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-  </aside>
+
+    <div id="respnav">
+      <ul>
+        <li><a class="A" href="index.html">Accueil</a></li>
+        <li><a class="B" href="projet.html">Projets</a></li>
+        <li><a class="C" href="contacte.html">Contactes & Liens</a></li>
+      </ul>
+    </div>
+
+  </header>
+
   <main>
-    <section id="accueil">
-      <h1>Welcome !</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, numquam molestiae amet ipsam ratione incidunt? Sed, repudiandae, placeat natus quam iusto quidem, velit labore temporibus itaque culpa eligendi tempore. Blanditiis!</p>
-    </section>
-    
+    <h1>Mon profile</h1>
     <section id="profile">
-      <h2>Learn more about me !</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, numquam molestiae amet ipsam ratione incidunt? Sed, repudiandae, placeat natus quam iusto quidem, velit labore temporibus itaque culpa eligendi tempore. Blanditiis!</p>
-    </section>
-
-    <section id="projet">
-      <h2>My project !</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, numquam molestiae amet ipsam ratione incidunt? Sed, repudiandae, placeat natus quam iusto quidem, velit labore temporibus itaque culpa eligendi tempore. Blanditiis!</p>
-    </section>
-
-    <section id="contacte">
-      <h2>Feel free to contacte me !</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, numquam molestiae amet ipsam ratione incidunt? Sed, repudiandae, placeat natus quam iusto quidem, velit labore temporibus itaque culpa eligendi tempore. Blanditiis!</p>
+      <div class="partOne">
+        <h2>A propos de moi</h2>
+        <p><strong>J</strong>e suis un étudiant de 20 ans passionné par le développement web, et je trouve un réel plaisir dans le coding. Mon langage de programmation favori est le JavaScript. En dehors du coding j'apprécie énormément la natation, la randonnée et la lecture. Mes amis me décrivent comme quelqu'un de joyeux, optimiste et créatif. J'aime relever de nouveaux défis et trouver des solutions innovantes pour résoudre les problèmes qui se présentent à moi. J'ai développé une solide compréhension des principes fondamentaux du développement web, et je suis impatient d'approfondir mes connaissances et d'explorer de nouvelles technologies.</p>
+      </div>
+      <div class="cta">
+        <a href="cv/cv_pierre-louis_sans.pdf" download><button class="custom-btn btn-3"><span>Télèchargez mon CV</span></button></a>
+        <a href="contacte.html" ><button class="custom-btn2 btn-4"><span>Me contactez</span></button></a>
+      </div>
+      <div class="partTwo">
+        <div class="partTwoTextImg">
+          <div class="partTwoImgOne">
+            <img src="img/nodejslogo.png" alt="logo node.js">
+            <img src="img/pythonlogo.png" alt="logo python">
+          </div>
+          <div class="partTwoImgTwo">
+            <img src="img/wplogo.png" alt="logo wp">
+            <img src="img/docker_official_logo_icon_169250.png" alt="logo docker">
+          </div>
+        </div>
+        <div class="partTwoText">
+          <h2>Hard skill</h2>
+          <p><strong>A</strong>u travers de mon parcours personnel et professionnel, j'ai eu l'occasion de travailler avec de nombreux outils. Une liste non exhaustive des outils avec lesquels j'ai réalisé un ou plusieurs projets : HTML, CSS, JS, PHP, MySQL, MongoDB, Docker, Symfony, Vue.js, WordPress, Node.js, Python ...</p>
+        </div>
+      </div>
+      <div class="partThree">
+        <div class="partThreeImg">
+          <img src="img/1200px-Adobe_Logo_Standard.svg.png" alt="logo suite office">
+          <img src="img/Microsoft_Office_logo_(2019–present).svg.png" alt="logo team work">
+        </div>
+        <div class="partThreeText">
+          <h2>Soft skill</h2>
+          <p><strong>J</strong>'ai eu la chance de pouvoir me former aux soft skills durant mon parcours, tels que le travail d'équipe, le design thinking, l'intelligence collective, la méthode Agile, etc.</p>
+        </div>
+      </div>
+      <div class="partFour">
+        <h2>Expérience</h2>
+        <p><strong>J</strong>e suis actuellement en formation de développeur web à l'Institue de l'Iternert et du Multimedia (IIM). J'ai eu l'occasion de travailler en tant que développeur web durant un stage à Station-F dans une petit Start-Up. J'ai aussi eu la chance de participer au Hackathon NeuroTechX 2022.</p>
+      </div>
+      
     </section>
   </main>
 </body>
