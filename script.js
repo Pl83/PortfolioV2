@@ -43,7 +43,6 @@ onload = function() {
 /* ----------Display hidden data----------- */
 
 let showmail = document.getElementsByClassName('showmail');
-let showtel = document.getElementsByClassName('showtel');
 
 for (let i = 0; i < showmail.length; i++) {
   showmail[i].addEventListener('click', function() {
@@ -53,17 +52,6 @@ for (let i = 0; i < showmail.length; i++) {
     }
   });
 }
-
-for (let i = 0; i < showtel.length; i++) {
-  showtel[i].addEventListener('click', function() {
-    let tel = document.getElementsByClassName('tel');
-    for (let j = 0; j < tel.length; j++) {
-      tel[j].innerText = '06.44.72.50.34';
-    }
-  });
-}
-
-
 
 /* ----------Burger----------- */
 let state = 0;
