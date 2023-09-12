@@ -997,25 +997,7 @@ background: linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
   }
 }
 
-@media only screen and (max-width: 581px) {
-
-  #profile {
-    top: calc(var(--HeaderHeight) + 65%);
-    left: 60%;
-  }
-
-}
-
-@media only screen and (max-width: 500px) {
-
-  #profile {
-    top: calc(var(--HeaderHeight) + 70%);
-    left: 70%;
-  }
-
-}
-
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 425px) {
 
   header #respnav a {
     font-size: 30px !important;
@@ -1097,22 +1079,6 @@ background: linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
 
 }
 
-@media only screen and (max-width: 405px) {
-
-  #profile {
-    top: calc(var(--HeaderHeight) + 110%) !important;
-    left: 85%;
-  }
-
-  .cta {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 @media only screen and (max-width: 375px) {
 
 
@@ -1167,16 +1133,7 @@ background: linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
 
 }
 
-@media only screen and (max-width: 351px) {
-
-  #profile {
-    top: calc(var(--HeaderHeight) + 120%) !important;
-    left: 100%;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 320px) {
 
   #profile {
     top: calc(var(--HeaderHeight) + 180%) !important;
